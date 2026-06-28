@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Elegant Photography - Premium wedding photography, album making, model shoots, brand photography & cinematic video services. Capturing timeless moments with cinematic artistry.">
+    <title>Elegant Photography | Premium Wedding & Cinematic Photography</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <span class="preloader-logo">ℰ</span>
+            <div class="preloader-bar">
+                <div class="preloader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-icon">ℰ</span>
+                <span class="logo-text">Elegant Photography</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#hero" class="nav-link active">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="#pricing" class="nav-link">Pricing</a></li>
+                <li><a href="#contact" class="nav-link nav-cta">Book Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-bg" style="background-image: url('images/hero.png')"></div>
+        <canvas id="particles"></canvas>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-subtitle">— Premium Photography —</span>
+            <h1 class="hero-title">
+                <span class="hero-line">Elegant</span>
+                <span class="hero-line accent">Photography</span>
+            </h1>
+            <p class="hero-description">Capturing timeless moments with cinematic artistry.<br>Wedding • Model Shoots • Brand • Cinematic Films</p>
+            <div class="hero-cta">
+                <a href="#portfolio" class="btn btn-primary">View Portfolio</a>
+                <a href="#contact" class="btn btn-outline">Book a Session</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll Down</span>
+            <div class="scroll-indicator"></div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">What We Offer</span>
+                <h2 class="section-title">Our <span class="accent">Services</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="services-grid">
+                <!-- Wedding Photography -->
+                <div class="service-card reveal">
+                    <div class="service-image">
+                        <img src="images/wedding.jpg" alt="Wedding Photography">
+                        <div class="service-overlay"></div>
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon"><i class="fas fa-ring"></i></div>
+                        <h3 class="service-title">Wedding Photography</h3>
+                        <p class="service-desc">Capturing every precious moment of your special day with artistic vision and emotional depth. From intimate ceremonies to grand celebrations.</p>
+                        <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Album Making -->
+                <div class="service-card reveal">
+                    <div class="service-image">
+                        <img src="images/album.jpg" alt="Premium Album Making">
+                        <div class="service-overlay"></div>
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon"><i class="fas fa-book-open"></i></div>
+                        <h3 class="service-title">Premium Album Making</h3>
+                        <p class="service-desc">Handcrafted luxury albums with premium materials, custom designs, and archival quality prints that preserve your memories for generations.</p>
+                        <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Model Shoot -->
+                <div class="service-card reveal">
+                    <div class="service-image">
+                        <img src="images/model.jpg" alt="Model Shoot">
+                        <div class="service-overlay"></div>
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon"><i class="fas fa-camera-retro"></i></div>
+                        <h3 class="service-title">Model Shoot</h3>
+                        <p class="service-desc">Professional model portfolio shoots with creative direction, expert lighting, and editorial-quality retouching for aspiring and established models.</p>
+                        <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Brand Photography -->
+                <div class="service-card reveal">
+                    <div class="service-image">
+                        <img src="images/brand.png" alt="Brand Photography">
+                        <div class="service-overlay"></div>
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon"><i class="fas fa-gem"></i></div>
+                        <h3 class="service-title">Brand Photography</h3>
+                        <p class="service-desc">Elevate your brand identity with stunning commercial photography. Product shots, lifestyle imagery, and brand storytelling that converts.</p>
+                        <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Cinematic Video -->
+                <div class="service-card reveal">
+                    <div class="service-image">
+                        <img src="images/cinematic.png" alt="Cinematic Video Shoot">
+                        <div class="service-overlay"></div>
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon"><i class="fas fa-film"></i></div>
+                        <h3 class="service-title">Cinematic Video Shoot</h3>
+                        <p class="service-desc">Hollywood-grade cinematic wedding films and promotional videos with professional color grading, drone shots, and immersive storytelling.</p>
+                        <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section portfolio">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Our Work</span>
+                <h2 class="section-title">Featured <span class="accent">Portfolio</span></h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="wedding">Wedding</button>
+                <button class="filter-btn" data-filter="model">Model</button>
+                <button class="filter-btn" data-filter="brand">Brand</button>
+                <button class="filter-btn" data-filter="cinematic">Cinematic</button>
+            </div>
+
+            <div class="portfolio-grid">
+                <div class="portfolio-item reveal" data-category="wedding">
+                    <img src="images/hero1.png" alt="Wedding Celebration" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-category">Wedding</span>
+                        <h4 class="portfolio-title">Royal Wedding Celebration</h4>
+                        <button class="portfolio-zoom"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+
+                <div class="portfolio-item reveal" data-category="wedding">
+                    <img src="images/wedding.png" alt="Traditional Bride" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-category">Wedding</span>
+                        <h4 class="portfolio-title">The Beautiful Bride</h4>
+                        <button class="portfolio-zoom"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+
+                <div class="portfolio-item reveal" data-category="wedding">
+                    <img src="images/portfolio1.png" alt="Pre-Wedding Romance" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-category">Wedding</span>
+                        <h4 class="portfolio-title">Pre-Wedding Romance</h4>
+                        <button class="portfolio-zoom"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+
+                <div class="portfolio-item reveal" data-category="model">
+                    <img src="images/model.png" alt="Fashion Editorial" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-category">Model Shoot</span>
+                        <h4 class="portfolio-title">Fashion Editorial</h4>
+                        <button class="portfolio-zoom"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+
+                <div class="portfolio-item reveal" data-category="wedding">
+                    <img src="images/wedding1.png" alt="Fashion Editorial" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-category"> wedding</span>
+                        <h4 class="portfolio-title">The Handsome Groom</h4>
+                        <button class="portfolio-zoom"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+
+                <div class="portfolio-item reveal" data-category="brand">
+                    <img src="images/brand.png" alt="Brand Campaign" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-category">Brand</span>
+                        <h4 class="portfolio-title">Wedding Brand Campaign</h4>
+                        <button class="portfolio-zoom"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+
+                <div class="portfolio-item reveal" data-category="cinematic">
+                    <img src="images/cinematic.png" alt="Cinematic Film" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-category">Cinematic</span>
+                        <h4 class="portfolio-title">Wedding Cinematic Film</h4>
+                        <button class="portfolio-zoom"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+
+                <div class="portfolio-item reveal" data-category="wedding">
+                    <img src="images/album.png" alt="Album Collection" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-category">Album</span>
+                        <h4 class="portfolio-title">Premium Album Collection</h4>
+                        <button class="portfolio-zoom"><i class="fas fa-expand"></i></button>
+                    </div>
+
+                </div>
+                  <div class="portfolio-item reveal" data-category="model">
+                    <img src="images/model2.png" alt="Fashion Editorial" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-category">Model Shoot</span>
+                        <h4 class="portfolio-title">Fashion Editorial</h4>
+                        <button class="portfolio-zoom"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose"><i class="fas fa-times"></i></button>
+        <button class="lightbox-prev" id="lightboxPrev"><i class="fas fa-chevron-left"></i></button>
+        <button class="lightbox-next" id="lightboxNext"><i class="fas fa-chevron-right"></i></button>
+        <div class="lightbox-content">
+            <img id="lightboxImage" src="" alt="Portfolio Preview">
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image reveal">
+                    <img src="images/portfolio1.png" alt="About Elegant Photography">
+                    <div class="about-experience">
+                        <span class="exp-number">10+</span>
+                        <span class="exp-text">Years Experience</span>
+                    </div>
+                </div>
+                <div class="about-content reveal">
+                    <span class="section-subtitle">About Us</span>
+                    <h2 class="section-title">The Art of <span class="accent">Storytelling</span></h2>
+                    <div class="section-divider left"></div>
+                    <p class="about-text">At Elegant Photography, we don't just take photos — we craft visual stories that last a lifetime. With over a decade of experience in wedding photography, cinematic videography, and brand campaigns, we bring a unique blend of artistic vision and technical excellence to every project.</p>
+                    <p class="about-text">Our team of passionate photographers and filmmakers specialize in capturing the raw emotions, candid moments, and grand celebrations that make your story truly yours. From intimate pre-wedding shoots to extravagant destination weddings, we ensure every frame is a masterpiece.</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="2400">0</span><span class="stat-plus">+</span>
+                            <span class="stat-label">Photos Delivered</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="500">0</span><span class="stat-plus">+</span>
+                            <span class="stat-label">Happy Clients</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="150">0</span><span class="stat-plus">+</span>
+                            <span class="stat-label">Weddings Shot</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="22">0</span><span class="stat-plus">+</span>
+                            <span class="stat-label">Awards Won</span>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section modern-reviews-section">
+        <div class="container modern-reviews-container">
+            <div class="modern-reviews-header">
+                <span class="modern-reviews-tag">// CLIENT STORIES</span>
+                <h2 class="modern-reviews-title">Words from our Clients</h2>
+            </div>
+            
+            <div class="modern-reviews-scroll">
+                <div class="modern-review-card">
+                    <div class="modern-review-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="modern-review-text">"Elegant Photography captured our wedding like a dream! Every photo tells a story, and the cinematic video still gives us goosebumps. Absolutely incredible work — they exceeded all our expectations."</p>
+                    <div class="modern-review-author">
+                        <div class="modern-review-avatar" style="background: linear-gradient(135deg, #a78bfa, #818cf8);">RK</div>
+                        <div class="modern-review-info">
+                            <h4 class="modern-review-name">Rahul & Kavita</h4>
+                            <span class="modern-review-role">Wedding Photography</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modern-review-card">
+                    <div class="modern-review-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="modern-review-text">"My portfolio shoot was phenomenal! The creative direction, lighting, and final edits were world-class. I've gotten so many modeling opportunities thanks to these photos."</p>
+                    <div class="modern-review-author">
+                        <div class="modern-review-avatar" style="background: linear-gradient(135deg, #fbbf24, #f59e0b);">SP</div>
+                        <div class="modern-review-info">
+                            <h4 class="modern-review-name">Sneha Patel</h4>
+                            <span class="modern-review-role">Model Portfolio Shoot</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modern-review-card">
+                    <div class="modern-review-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="modern-review-text">"The wedding album they created is a true work of art. The leather-bound album with gold embossing is stunning, and every page layout is thoughtfully designed. It's our most treasured possession."</p>
+                    <div class="modern-review-author">
+                        <div class="modern-review-avatar" style="background: linear-gradient(135deg, #f472b6, #db2777);">AD</div>
+                        <div class="modern-review-info">
+                            <h4 class="modern-review-name">Amit & Deepika</h4>
+                            <span class="modern-review-role">Album Making</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modern-review-card">
+                    <div class="modern-review-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="modern-review-text">"We hired Elegant Photography for our jewelry brand campaign. The product shots were magazine-worthy, and our online sales increased by 40% after using their images. Professional and creative!"</p>
+                    <div class="modern-review-author">
+                        <div class="modern-review-avatar" style="background: linear-gradient(135deg, #34d399, #059669);">NJ</div>
+                        <div class="modern-review-info">
+                            <h4 class="modern-review-name">Neha Jewellers</h4>
+                            <span class="modern-review-role">Brand Photography</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modern-review-card">
+                    <div class="modern-review-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="modern-review-text">"The cinematic wedding film was like watching a Bollywood movie starring us! The drone shots, slow-mo captures, and the background score selection were impeccable. Truly cinematic magic!"</p>
+                    <div class="modern-review-author">
+                        <div class="modern-review-avatar" style="background: linear-gradient(135deg, #60a5fa, #2563eb);">VS</div>
+                        <div class="modern-review-info">
+                            <h4 class="modern-review-name">Vikram & Sakshi</h4>
+                            <span class="modern-review-role">Cinematic Video</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="section pricing">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Investment</span>
+                <h2 class="section-title">Our <span class="accent">Packages</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="pricing-grid">
+                <!-- Silver -->
+                <div class="pricing-card reveal">
+                    <div class="pricing-badge">Starter</div>
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">Silver</h3>
+                        <div class="pricing-amount">
+                            <span class="currency">₹</span>
+                            <span class="price">35,000</span>
+                        </div>
+                        <span class="pricing-period">Starting Price</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> 8 Hours Coverage</li>
+                        <li><i class="fas fa-check"></i> 2 Photographer</li>
+                        <li><i class="fas fa-check"></i> 200+ Edited Photos</li>
+                        <li><i class="fas fa-check"></i> Online Gallery</li>
+                        <li><i class="fas fa-check"></i> Basic Retouching</li>
+                        <li class="disabled"><i class="fas fa-times"></i> Cinematic Video</li>
+                        <li class="disabled"><i class="fas fa-times"></i> Premium Album</li>
+                        <li class="disabled"><i class="fas fa-times"></i> Drone Coverage</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline btn-full">Choose Plan</a>
+                </div>
+                <!-- Gold (Featured) -->
+                <div class="pricing-card featured reveal">
+                    <div class="pricing-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">Gold</h3>
+                        <div class="pricing-amount">
+                            <span class="currency">₹</span>
+                            <span class="price">55,000</span>
+                        </div>
+                        <span class="pricing-period">Starting Price</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Full Day Coverage</li>
+                        <li><i class="fas fa-check"></i> 1 Photographer 1 Videographer </li>
+                        <li><i class="fas fa-check"></i> 500+ Edited Photos</li>
+                        <li><i class="fas fa-check"></i> Online Gallery</li>
+                        <li><i class="fas fa-check"></i> Advanced Retouching</li>
+                        <li><i class="fas fa-check"></i> Cinematic Highlights</li>
+                        <li><i class="fas fa-check"></i> Premium Photo Album</li>
+                        <li class="disabled"><i class="fas fa-times"></i> Drone Coverage</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary btn-full">Choose Plan</a>
+                </div>
+                <!-- Platinum -->
+                <div class="pricing-card reveal">
+                    <div class="pricing-badge">Premium</div>
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">Platinum</h3>
+                        <div class="pricing-amount">
+                            <span class="currency">₹</span>
+                            <span class="price">1,50,000</span>
+                        </div>
+                        <span class="pricing-period">Starting Price</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Multi-Day Coverage</li>
+                        <li><i class="fas fa-check"></i> 3 Photographers + 2 Videographer</li>
+                        <li><i class="fas fa-check"></i> 1000+ Edited Photos</li>
+                        <li><i class="fas fa-check"></i> Online Gallery</li>
+                        <li><i class="fas fa-check"></i> Magazine-Grade Retouching</li>
+                        <li><i class="fas fa-check"></i> Full Cinematic Film</li>
+                        <li><i class="fas fa-check"></i> Luxury Leather Album</li>
+                        <li><i class="fas fa-check"></i> Drone Coverage</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline btn-full">Choose Plan</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Get in Touch</span>
+                <h2 class="section-title">Book Your <span class="accent">Session</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <h3 class="contact-heading">Let's Create Something Beautiful</h3>
+                    <p class="contact-subtext">Ready to capture your special moments? Get in touch with us and let's discuss your vision.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <h4>Studio Location</h4>
+                                <p>Near Jagannath tample,Baripada <br>Mayurbhanj, Odisha 757001</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+91 98765 43210<br>+91 73259 15722</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>hello@elegantphotography.com<br>bookings@elegantphotography.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-clock"></i></div>
+                            <div>
+                                <h4>Working Hours</h4>
+                                <p>Mon - Sat: 9:00 AM - 10:00 PM<br>Sunday: By Appointment</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <a href="https://instagram.com/elegant_photo_graphy" target="_blank" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form reveal" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="contactName" name="name" placeholder=" " required>
+                            <label for="contactName">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="contactEmail" name="email" placeholder=" " required>
+                            <label for="contactEmail">Your Email</label>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="tel" id="contactPhone" name="phone" placeholder=" " required>
+                            <label for="contactPhone">Phone Number</label>
+                        </div>
+                        <div class="form-group">
+                            <select id="contactService" name="service" required>
+                                <option value="" disabled selected>Select Service</option>
+                                <option value="wedding">Wedding Photography</option>
+                                <option value="album">Album Making</option>
+                                <option value="model">Model Shoot</option>
+                                <option value="brand">Brand Photography</option>
+                                <option value="cinematic">Cinematic Video</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="date" id="contactDate" name="eventDate" placeholder=" ">
+                        <label for="contactDate">Event Date</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="contactMessage" name="message" rows="4" placeholder=" " required></textarea>
+                        <label for="contactMessage">Your Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+                        <span class="btn-text">Send Message</span>
+                        <span class="btn-loader" style="display:none"><i class="fas fa-spinner fa-spin"></i></span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                    <div class="form-status" id="formStatus"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <a href="#hero" class="footer-logo">
+                            <span class="logo-icon">ℰ</span>
+                            <span>Elegant Photography</span>
+                        </a>
+                        <p>Capturing timeless moments with cinematic artistry. We transform your precious memories into visual masterpieces that last a lifetime.</p>
+                        <div class="footer-social">
+                            <a href="https://instagram.com/elegant_photo_graphy" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                            <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#hero">Home</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#pricing">Pricing</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-services">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#services">Wedding Photography</a></li>
+                            <li><a href="#services">Album Making</a></li>
+                            <li><a href="#services">Model Shoot</a></li>
+                            <li><a href="#services">Brand Photography</a></li>
+                            <li><a href="#services">Cinematic Video</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-newsletter">
+                        <h4>Newsletter</h4>
+                        <p>Subscribe to get updates on our latest work and exclusive offers.</p>
+                        <form class="newsletter-form" id="newsletterForm">
+                            <input type="email" placeholder="Your email address" required>
+                            <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Elegant Photography. All rights reserved.</p>
+                <p>Crafted with <i class="fas fa-heart" style="color: var(--gold)"></i> for timeless moments</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <div class="toast-content">
+            <i class="fas fa-check-circle toast-icon"></i>
+            <span class="toast-message" id="toastMessage"></span>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+ 
+</body>
+</html>
